@@ -33,6 +33,7 @@
 // We then reset it for fixed navbars in the #gridSystem mixin
 .navbar .container {
   width: auto;
+  padding-top: 0px;
 }
 
 // Override the default collapsed state
@@ -234,6 +235,8 @@
   color: @navbarLinkColor;
   text-decoration: none;
   text-shadow: 0 1px 0 @navbarBackgroundHighlight;
+  border-top: 2px @blueDark solid;
+
 }
 .navbar .nav .dropdown-toggle .caret {
   margin-top: 8px;
@@ -245,6 +248,8 @@
   background-color: @navbarLinkBackgroundHover; // "transparent" is default to differentiate :hover from .active
   color: @navbarLinkColorHover;
   text-decoration: none;
+  border-top-color: @blue;
+
 }
 
 // Active nav items
@@ -257,6 +262,7 @@
   -webkit-box-shadow: inset 0 3px 8px rgba(0,0,0,.125);
      -moz-box-shadow: inset 0 3px 8px rgba(0,0,0,.125);
           box-shadow: inset 0 3px 8px rgba(0,0,0,.125);
+//  border-top-color: @navbarLinkColor;
 }
 
 // Navbar button for toggling navbar items in responsive layouts
